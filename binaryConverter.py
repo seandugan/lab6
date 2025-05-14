@@ -19,6 +19,10 @@ def binToDecList(bin):
 
 # Decimal to Binary
 def decToBinList(d):
+    
+    if d==0:
+        return [0]
+      
     bin = []
 
     numDigits = 0
@@ -31,7 +35,7 @@ def decToBinList(d):
         if d>=curPow:
             bin.append(1)
             d -= curPow
-      
+        
         else:
             bin.append(0)
        
